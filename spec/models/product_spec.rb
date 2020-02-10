@@ -32,8 +32,3 @@ RSpec.describe Product, type: :model do
     end
   end
 end
-
-#validates :name, presense: true
-#validates :price, presense: true
-#validates :quantity, presense: true
-#validates :category, presense: true
