@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe Product, type: :model do
   describe 'Validations' do
     before(:each) do
-      @category = Category.new(id: 5, name: "Sports Equipment")
-      @product = Product.new(name: "Basketball", price_cents: 2300, quantity: 12, category: @category)
+      @category = Category.create(id: 5, name: "Sports Equipment")
+      @product = Product.create(name: "Basketball", price_cents: 2300, quantity: 12, category: @category)
     end
 
     it "is a valid product with all fields filled" do
